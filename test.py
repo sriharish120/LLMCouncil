@@ -12,7 +12,7 @@ MODELS = {
     "Proposer": "openai/gpt-4o-mini",
     "Challenger": "anthropic/claude-3-haiku",
     "Clarifier": "meta-llama/llama-3-8b-instruct",
-    "Skeptic": "upstage/solar-pro-3:free",
+    "Skeptic": "stepfun/step-3.5-flash:free",
     "Final": "qwen/qwen3-vl-30b-a3b-thinking"
 }
 
