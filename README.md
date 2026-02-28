@@ -38,6 +38,11 @@ This project implements an "LLM Council" using Streamlit and the OpenRouter API.
     pip install -r requirements.txt
     ```
 
+## Live Demo
+
+You can access the hosted version of the LLM Council application here: [https://llmcouncil-main.streamlit.app/](https://llmcouncil-main.streamlit.app/)
+Note: You will need an OpenRouter API key to use the live demo.
+
 ## Usage
 
 1.  **Run the Streamlit application:**
