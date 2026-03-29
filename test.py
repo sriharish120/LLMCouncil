@@ -138,7 +138,7 @@ def run_council(user_prompt):
     response, error = call_model(
         MODELS["Proposer"],
         [{"role": "user", "content": proposer_prompt}],
-        max_tokens=900
+        max_tokens=1200
     )
     results["Proposer"] = response or error
 
@@ -146,7 +146,7 @@ def run_council(user_prompt):
     response, error = call_model(
         MODELS["Challenger"],
         [{"role": "user", "content": challenger_prompt}],
-        max_tokens=800
+        max_tokens=1200
     )
     results["Challenger"] = response or error
 
@@ -162,7 +162,7 @@ Challenger:
     response, error = call_model(
         MODELS["Clarifier"],
         [{"role": "user", "content": clarifier_input}],
-        max_tokens=800
+        max_tokens=1200
     )
     results["Clarifier"] = response or error
 
@@ -174,7 +174,7 @@ Find weaknesses or hidden assumptions in:
     response, error = call_model(
         MODELS["Skeptic"],
         [{"role": "user", "content": skeptic_prompt}],
-        max_tokens=1000
+        max_tokens=3000
     )
     results["Skeptic"] = response or error
 
