@@ -174,7 +174,7 @@ Find weaknesses or hidden assumptions in:
     response, error = call_model(
         MODELS["Skeptic"],
         [{"role": "user", "content": skeptic_prompt}],
-        max_tokens=3000
+        max_tokens=4000
     )
     results["Skeptic"] = response or error
 
